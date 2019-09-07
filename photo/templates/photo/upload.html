@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block title %}- Upload{% endblock %}
+
+{% block content %}
+
+<div class="form-row align-items-center">
+    <div class="col-md-8_panel_panel-default">
+        <form action="" method="post" enctype="multipart/form-data">
+            {{ form.as_p }}
+            {% csrf_token %}
+            <input type="submit" class="btn btn-primary" value="Upload">
+        </form>
+    </div>
+</div>
+
+{% endblock %}
